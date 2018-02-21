@@ -5,8 +5,8 @@ sudo apt-get install oracle-java8-installer -y
 # Install SDKman and groovy, gradle, grails
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install sbt
 sdk selfupdate force
+sdk install sbt
 sdk install groovy
 sdk install gradle
 sdk install grails
