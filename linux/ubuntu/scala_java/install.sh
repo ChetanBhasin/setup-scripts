@@ -11,3 +11,7 @@ sudo update-alternatives --config java
 sudo apt-get install sbt
 sudo curl -L -o /usr/local/bin/amm https://git.io/vdNv2 && sudo chmod +x /usr/local/bin/amm
 sudo curl -L -o /usr/local/bin/mill https://github.com/lihaoyi/mill/releases/download/0.1.0/0.1.0 && sudo chmod +x /usr/local/bin/mill
+
+# Install groovy
+sudo apt-get install groovy
+groovy -version
