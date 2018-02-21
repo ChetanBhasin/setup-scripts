@@ -1,18 +1,19 @@
 #!/bin/bash
 
+sudo apt-get install oracle-java8-installer -y
+
 # Install SDKman and groovy, gradle, grails
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdkman install java
-sdkman install sbt
-sdkman selfupdate force
-sdkman install groovy
-sdkman install gradle
-sdkman install grails
-sdkman install ant
-sdkman install leiningen
-sdkman install maven
-sdkman install scala
+sdk install sbt
+sdk selfupdate force
+sdk install groovy
+sdk install gradle
+sdk install grails
+sdk install ant
+sdk install leiningen
+sdk install maven
+sdk install scala
 
 # Install Ammonite Repl, and Mill build tool
 sudo curl -L -o /usr/local/bin/amm https://git.io/vdNv2 && sudo chmod +x /usr/local/bin/amm
